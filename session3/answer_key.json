@@ -1,0 +1,87 @@
+[
+  {
+    "id": "msg-01",
+    "customer": "Ploy",
+    "items": [
+      { "name": "Iced Latte", "qty": 2 },
+      { "name": "Croissant", "qty": 1 }
+    ],
+    "pickup": "15:00"
+  },
+  {
+    "id": "msg-02",
+    "customer": "Beam",
+    "items": [
+      { "name": "Americano", "qty": 3 }
+    ],
+    "pickup": "14:30"
+  },
+  {
+    "id": "msg-03",
+    "customer": "Nong",
+    "items": [
+      { "name": "Green Tea Latte", "qty": 1 }
+    ],
+    "pickup": "16:00"
+  },
+  {
+    "id": "msg-04",
+    "customer": "Fai",
+    "items": [
+      { "name": "Iced Chocolate", "qty": 2 },
+      { "name": "Cheesecake", "qty": 1 }
+    ],
+    "pickup": "15:45"
+  },
+  {
+    "id": "msg-05",
+    "customer": "Tim",
+    "items": [
+      { "name": "Espresso", "qty": 4 }
+    ],
+    "pickup": "13:00"
+  },
+  {
+    "id": "msg-06",
+    "customer": "Mint",
+    "items": [
+      { "name": "Cappuccino", "qty": 1 },
+      { "name": "Matcha", "qty": 1 }
+    ],
+    "pickup": "12:00"
+  },
+  {
+    "id": "msg-07",
+    "customer": "Ryan",
+    "items": [
+      { "name": "Americano", "qty": 2 },
+      { "name": "Croissant", "qty": 3 }
+    ],
+    "pickup": "11:00"
+  },
+  {
+    "id": "msg-08",
+    "customer": "Ploy",
+    "items": [
+      { "name": "Thai Tea", "qty": 2 },
+      { "name": "Brownie", "qty": 1 }
+    ],
+    "pickup": "17:00"
+  },
+  {
+    "id": "msg-09",
+    "customer": "Kit",
+    "items": [
+      { "name": "Black Coffee", "qty": 1 }
+    ],
+    "pickup": "09:00"
+  },
+  {
+    "id": "msg-10",
+    "customer": "Wan",
+    "items": [
+      { "name": "Iced Latte", "qty": 5 }
+    ],
+    "pickup": "18:00"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {"title": "Design a poster for our club night", "location": "Ratchathewi", "budget": 500, "expires": "2026-12-20", "contact": "line: @annb"},
+  {"title": "Tutor first-year calculus, 2 hours a week", "location": "Phaya Thai", "budget": 800, "expires": "2026-12-31", "contact": "line: @math_help"},
+  {"title": "Photograph a graduation shoot", "location": "Chatuchak", "budget": 1500, "expires": "2026-11-30", "contact": "ig: @pnpshots"},
+  {"title": "Type up 40 pages of handwritten notes", "location": "Online", "budget": 300, "expires": "2027-01-15", "contact": "line: @noteslave"},
+  {"title": "Help move a fridge on Saturday", "location": "Bang Sue", "budget": 400, "expires": "2026-12-05", "contact": "089-555-0142"},
+  {"title": "Edit a 3-minute club video", "location": "Online", "budget": 700, "expires": "2026-08-01", "contact": "line: @vidclub"},
+  {"title": "Hand out flyers at the sports day", "location": "Ratchathewi", "budget": 350, "expires": "2026-07-15", "contact": "line: @sportsday"},
+  {"title": "Build a simple club website", "location": "Online", "budget": 2000, "expires": "2026-06-30", "contact": "ig: @webclub"}
+]

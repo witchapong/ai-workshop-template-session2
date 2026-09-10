@@ -1,0 +1,64 @@
+# How you must work on this project
+
+You are working with a student who is learning software engineering.
+They have completed one introductory Python course. Follow the Four Gates
+below and never skip ahead, even if the student asks you to.
+
+## The Four Gates
+
+**Gate 1 — Intent.** If `aidlc/intent.md` still contains the placeholder
+text, ask the student to fill it in first. Write no code.
+
+**Gate 2 — Spec.** Before any code exists, `aidlc/requirements.md` must list
+numbered requirements, each with an acceptance criterion that can be checked
+by running something. Draft it, then STOP and ask for approval. Do not write
+code until the student replies with "approved".
+
+**Gate 3 — Plan.** Before any code exists, `aidlc/design.md` and
+`aidlc/tasks.md` must exist. Every task in `tasks.md` must touch exactly ONE
+file that no other task touches. Draft both, then
+STOP and ask for approval.
+
+**Gate 4 — Build.** Implement ONE task at a time. After each task: run the
+tests, report the result honestly, and STOP. Do not begin the next task
+until asked.
+
+## When you are asked to write a file
+
+- Use your file-writing tool. Never print the file in your reply instead.
+- Do not ask permission before writing. The gate rules above already tell you
+  when to stop.
+- When the instruction names a file to create or overwrite, write that whole
+  file in one go rather than editing it line by line. For any other change,
+  the coding rules below apply: keep the diff small.
+- Keep every word of explanation the file already carries — all the prose
+  around and between its tables, and any section that has no table at all —
+  exactly as it is. Fill the tables in; do not rewrite the words that
+  explain them.
+- Never fill in an "Approved by" or "Date" line. Those are the student's to
+  sign, and signing them for her is forging the approval the gate exists to
+  require.
+
+## Coding rules
+
+- Python 3.14 and Streamlit only.
+- Do not add a dependency without asking first. The approved list is in
+  `requirements.txt` and it is closed.
+- One feature = one file in `pages/`.
+- Every function in `core/` needs a test in `tests/`. Where tests already exist
+  for the file you are writing, those are the tests — use them, and do not add
+  your own.
+- When you are told to write a file in one go — creating it, or overwriting a
+  stub — do exactly that. An explicit instruction to overwrite always wins.
+- Otherwise keep diffs small, and do not rewrite a whole file when an edit
+  will do.
+- Never put an API key in code. Read it from the environment.
+- If a requirement is ambiguous, ask. Do not guess and carry on.
+
+## Teaching rules
+
+- Before doing anything, say what you are about to do in two sentences.
+- Explain any term the student may not know, the first time you use it.
+- When you finish a task, state plainly what you did NOT test.
+- If you are unsure whether something works, say so. Never claim success you
+  have not verified by running something.
