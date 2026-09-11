@@ -125,14 +125,31 @@ every test until you build it.
    `data\` does not exist in a fresh clone — it is also where your own posts
    will land later. `-Force` means the first command does not complain if you
    ever run it a second time and the folder is already there.
-7. **Point Cline at the model.** This is a separate step from `.env`, and
+7. **Install Cline.** These PCs are wiped between sessions, so it will not
+   be there from last week. Click the **Extensions** icon in the strip down
+   the far left (the four squares) and search `cline`.
+
+   **Eight extensions come back with similar names.** Take the one published
+   by **cline.bot** with a blue tick — first result, about 5 million
+   installs. To be certain, search this instead, which matches exactly one:
+   ```
+   saoudrizwan.claude-dev
+   ```
+   Click **Install**. A robot icon appears in that same left-hand strip. Any
+   other "Cline" is somebody else's copy, and you are about to paste a shared
+   class key into whatever you installed.
+8. **Point Cline at the model.** This is a separate step from `.env`, and
    skipping it is the most common way to arrive unable to work: `.env` is
    read by the *app*; Cline is a different program, with its own settings,
    that never looks at `.env`.
    - Click the **Cline icon** — the robot in the strip of icons down the far
      left.
-   - **Bring my own API key** (not "Absolutely Free" — that signs you into
-     Cline's own service and ignores the key you were just given).
+   - Cline opens on **"How will you use Cline?"** with four options.
+     **Scroll the list** — the one you want is last, and below the fold on a
+     lab monitor. The first three are **Absolutely Free** (already ticked for
+     you), **ClinePass** and **Frontier Model**; **take none of them.** Choose
+     the fourth, **Bring my own API key** — the others sign you into Cline's
+     own service or a paid plan and ignore the key you were just given.
    - API Provider **OpenAI Compatible** — **not "Z AI."** Cline's built-in Z
      AI provider has a fixed model dropdown that stops at `glm-5.2`; it does
      not offer `glm-5.3-flash`, even though the API genuinely serves it.
@@ -150,7 +167,7 @@ every test until you build it.
    > If Cline reports `429`, that is the whole room's requests landing on the
    > model at once, not a problem with your key. Wait about ten seconds and
    > send it again.
-8. **Check your setup.**
+9. **Check your setup.**
    ```
    .venv\Scripts\python.exe check_setup.py
    ```
@@ -158,7 +175,7 @@ every test until you build it.
    and run it again until it prints `ALL CHECKS PASSED`. This uses the
    Python *inside* `.venv` for the same reason step 4 did: the environment is
    never activated, so a bare `python` can silently run the wrong one.
-9. **See where you start.**
+10. **See where you start.**
    ```
    .venv\Scripts\python.exe -m pytest
    ```
@@ -167,7 +184,7 @@ every test until you build it.
 
 **Stuck on the venv, `pip`, or PowerShell itself?** `TROUBLESHOOTING.md`'s
 "Setup is failing and you can't tell why" hands the rest of this section to
-Cline — but only once step 7 above is already working.
+Cline — but only once step 8 above is already working.
 
 ---
 
