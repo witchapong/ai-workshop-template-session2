@@ -183,7 +183,7 @@ repository and what does not.
 | `pages/1_Post_a_Job.py` | does not exist yet — you create it at Gate 4, task 2 |
 | `pages/2_Browse_Jobs.py` | does not exist yet — you create it at Gate 4, task 3 |
 | `core/spectrum.py`, `pages/2_Spectrum_Analyzer.py` | already finished — last week's app, carried over so it keeps working while you build this week's |
-| `data/jobs.json` | your eight seeded jobs, from the setup step above |
+| `data/jobs.json` | eight seeded jobs, from the setup step above — **five of them still open**, three already past their date. A correct Browse page shows five, not eight: the other three are hidden, not deleted. If you see five, nothing is wrong |
 | `aidlc/intent.md`, `requirements.md`, `design.md`, `tasks.md` | the same four gate documents as Lab 1, as blank **placeholder** templates — text marked `PLACEHOLDER` that your agent refuses to build past |
 
 Run `.venv\Scripts\python.exe -m pytest` and you get, on Python 3.14:

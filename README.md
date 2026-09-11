@@ -74,17 +74,37 @@ what that means in practice, and message the class channel if any step fails
    name the interpreter like this inside a project — the venv you just built
    is never activated (see step 5), so a bare `python` either errors or
    silently runs some other Python with none of this project's packages.
-9. **Point Cline at the model.** This is a *separate step* from `.env`, and
+9. **Install Cline.** These PCs are wiped between sessions, so it will not be
+   there from last week. In VS Code, click the **Extensions** icon in the strip
+   down the far left (the four squares), and search `cline`.
+
+   **Eight extensions come back with similar names.** Take the one whose
+   publisher is **cline.bot** with a blue tick — it is the first result and has
+   about 5 million installs. To be certain, paste this into the search box
+   instead, which matches exactly one extension:
+
+   ```
+   saoudrizwan.claude-dev
+   ```
+
+   Click **Install**. A robot icon appears in that same left-hand strip.
+
+   > Any other "Cline" is somebody else's copy. You are about to paste a shared
+   > class key into whatever you install, so this is worth ten extra seconds.
+
+10. **Point Cline at the model.** This is a *separate step* from `.env`, and
    skipping it is the most common way to arrive unable to work. `.env` is
    read by the *app* — `check_setup.py` today, and your own code later; Cline
    is a different program, with its own settings, that never looks at `.env`.
 
-   - Click the **Cline icon** — the robot, near the bottom of the strip of
+   - Click the **Cline icon** — the robot you just installed, in the strip of
      icons down the far left. The icons are unlabelled; hover to check.
-   - Cline opens on **"How will you use Cline?"**. It has already ticked
-     **Absolutely Free** for you. **Do not take it.** Choose
-     **Bring my own API key** — the free option signs you into Cline's own
-     service and never touches the key you were just given.
+   - Cline opens on **"How will you use Cline?"** with four options.
+     **Scroll the list** — the one you want is last and is below the fold on a
+     lab monitor. The first three are **Absolutely Free** (already ticked for
+     you), **ClinePass**, and **Frontier Model**; **take none of them.** Choose
+     the fourth, **Bring my own API key** — the others sign you into Cline's
+     own service or a paid plan, and never touch the key you were just given.
    - API Provider **OpenAI Compatible** — **not "Z AI."** Cline's built-in Z
      AI provider has a fixed model dropdown that stops at `glm-5.2`; it does
      not offer `glm-5.3-flash`, even though the API genuinely serves it.
