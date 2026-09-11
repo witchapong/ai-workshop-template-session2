@@ -280,10 +280,28 @@ because "does this test really decide this claim?" has been gotten wrong
 twice already: once by a real agent in a live run of this lab, and once in
 the reference spec used to write this lab's answer key. Read the sentence
 each `pytest` row is attached to and search it for **Browse, Post, page,
-card, count, shows, sees,** or **screen**. If any of those words appear next
-to a `pytest` citation, that row is in the wrong column: no test in this
-repository opens a page, so no `pytest` citation can ever decide a claim
-about one. Move it to `EYES:` instead.
+card, count, shows, sees,** or **screen**. No test in this repository opens a
+page, so no `pytest` citation can ever decide a claim about one.
+
+A hit is a flag, not a verdict. Ask one question about it: **what is this row
+actually claiming?**
+
+- If the claim is about what you'd *see on a page* — a count, a card, a
+  message — the row is in the wrong column. Move it to `EYES:`.
+- If the claim is about a function in `core/` and the page word is only
+  scene-setting, the citation is fine and the **sentence** is what needs
+  fixing. Reword it to say what the function does, and leave the row where
+  it is.
+
+The second case is real. A clean run of this lab produced:
+
+> Expiry hides a job without deleting it: the active list **the Browse page
+> displays** drops it, while both records remain in the data file.
+
+attached to `pytest test_active_jobs_hides_expired_without_deleting_them`.
+That test *does* decide that claim — the page words are describing why it
+matters. Moving that row would have thrown away a good citation. Deleting
+four words fixes it.
 
 **A worked example, so you have seen the mistake once before you have to
 catch it yourself.** This exact row reached an *approved* spec, in a live

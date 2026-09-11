@@ -307,6 +307,9 @@ title, a location dropdown, a budget number, a date, and
 a contact box. Saving calls save_job("data/jobs.json",
 job). Store the date as text with str().
 
+After saving, show a message naming how many jobs are
+now on the board.
+
 Do not modify core/board.py.
 ```
 
