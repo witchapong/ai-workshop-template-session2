@@ -1,30 +1,31 @@
 # Gate 1 — Intent
 
-<!-- Replace every line below that starts with the word it tells you to
-     replace. Your agent refuses to write code while any of them remain.
-     This comment can stay: it deliberately avoids the word, so the Gate 1
-     check counts only your unanswered questions. -->
-
 **Who is this for?**
-PLACEHOLDER — describe one real person and their situation in one sentence.
+Me, and pretty much anyone in my dorm — I want to hire someone to help carry
+a fridge up three flights of stairs, and right now the only way to find
+someone is to shout into four different LINE groups and hope.
 
 **What problem does it solve?**
-PLACEHOLDER — what is annoying or slow for them today?
+Small paid jobs on campus — help moving something, an hour of tutoring,
+walking someone's dog while they're on exam leave — get posted into random
+group chats and buried within a day. There's nowhere to actually search for
+one by area or by how much it pays.
 
 **What does "done" look like?**
-PLACEHOLDER — replace this with a **bulleted list**, one line per thing that
-must be true before you would call this finished. Gate 2 turns each bullet
-into a requirement, so a bullet you leave out is a requirement nobody checks.
-Be concrete, and include what must be true *on the screen*.
-
-The two lines below are from a **different project** — a lab-bench booking app
-— and are here only to show you the shape of a good bullet. Delete them, along
-with every other line of instruction in this file. Only your answers should
-survive:
-
-- a student can book a bench for a two-hour slot and see it in their list
-- the booking they just made appears at the top, with the right date"
+- I can post a job with a title, a location, a budget, an "open until" date
+  and a way to reach me, and it's still there the next time I open the app
+- someone browsing can filter by location and by a minimum budget, and only
+  the matching jobs show up
+- a job stops showing up in Browse Jobs the day after its open-until date,
+  but the record isn't deleted — it's still sitting in the data file if I
+  go look
+- the number in "N jobs available" at the top of Browse Jobs always matches
+  the number of cards actually listed under it, no matter what filters are
+  set
 
 **What is deliberately NOT included?**
-PLACEHOLDER — name at least two things you are choosing not to build. This
-matters more than it looks: it is what stops the agent inventing scope.
+No accounts or login — anyone can post, nothing is tied to who you are. No
+editing or deleting a job once you've posted it (if the price is wrong, you
+live with it or post a new one). No messaging inside the app itself — you
+contact people however their contact field says. No sorting the list by
+anything other than the two filters that already exist.
