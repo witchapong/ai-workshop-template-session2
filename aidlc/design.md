@@ -1,38 +1,29 @@
 # Gate 3 — Design
 
-Your agent drafts this. You correct it and approve it.
+> **Provisional** — see the note in `requirements.md`.
 
-## What does it compute, or store?
+## What data do we store?
 
-Some apps work out an answer from what you type. Some keep rows and hand them
-back later. Plenty do both — a job board keeps the jobs, and works out which
-of them are still open. Fill in whichever tables describe yours.
+Nothing is stored. The app computes from the inputs on screen every time.
 
-**If it computes** — name each function, what goes in, and what comes out:
-
-| Function | Takes | Returns |
+| Value | Meaning | Example |
 |---|---|---|
-| | | |
-
-**If it stores** — one row per _______:
-
-| Column | Meaning | Example |
-|---|---|---|
-| id | unique identifier | 3f2a9c01 |
-| | | |
+| frequency_hz | how fast a tone oscillates | 50.0 |
+| amplitude | how tall that tone is | 1.0 |
+| fs | sampling rate, samples per second | 1000 |
 
 ## What are the screens?
 
-One row per page. Lab 1 has one page; Lab 2 has two.
+| Page file | What the user does here |
+|---|---|
+| `pages/2_Spectrum_Analyzer.py` | Sets two tones and a sampling rate, and reads the two charts |
 
-| Page file | What the user does here | What they see |
-|---|---|---|
-| `pages/N_....py` | | |
+## How does data move?
 
-## How does it move?
+The user types two frequencies, two amplitudes and a sampling rate.
+`make_signal` adds the two sine waves into one array of samples, and `spectrum`
+converts that array into a list of frequencies with the strength of each.
+The page draws the samples against time, then the strengths against frequency.
 
-Three sentences: what the user types, what is computed or saved, and what
-appears on the screen as a result.
-
-**Approved by:** (your name — this gate is not finished while this is blank)
+**Approved by:**
 **Date:**

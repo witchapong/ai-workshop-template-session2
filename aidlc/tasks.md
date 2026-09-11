@@ -1,25 +1,14 @@
 # Gate 3 — Task list
 
-Your agent drafts this. You correct it and approve it.
+> **Provisional** — see the note in `requirements.md`.
 
-**The one rule that matters:** every task touches exactly ONE file that no
-other task touches. You are working alone, so this is not about collisions —
-it is about being able to finish something, run it, and know it works before
-you start the next thing.
+Working alone in Lab 1, so both tasks are yours. The one-file-per-owner rule
+still applies, and in Session 2 it is what lets four people build at once.
 
-**The second rule:** every task has a **Done when** copied from
-`aidlc/requirements.md` — and it must be one that could fail. A task owning a
-file under `pages/` gets an EYES criterion, because no test opens a page. A
-task with no Done when is a task that can never be wrong, and it will be.
-
-| # | Task | The ONE file it touches | Done when |
-|---|---|---|---|
-| 1 | | `core/....py` | `pytest test_...` |
-| 2 | | `pages/N_....py` | `EYES: ...` |
-
-One row per task, and no more. **Lab 1 has exactly two.** Lab 2 has three.
-Delete any row you do not use — a row naming a file nobody owns is worse than
-no row at all.
+| # | Task | Owner | The ONE file it touches | Done? |
+|---|---|---|---|---|
+| 1 | The maths: build a signal, take its spectrum, find the strongest frequency | me | `core/spectrum.py` | |
+| 2 | The screen: inputs for two tones, then the two charts | me | `pages/2_Spectrum_Analyzer.py` | |
 
 **Approved by:**
 **Date:**
