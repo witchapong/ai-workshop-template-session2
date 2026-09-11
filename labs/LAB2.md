@@ -110,6 +110,15 @@ every test until you build it.
    ```
    .venv\Scripts\python.exe -m pip install -r requirements.txt
    ```
+
+   Then prove the install took, before you spend time on anything else:
+   ```
+   .venv\Scripts\python.exe -m pytest -q
+   ```
+   `10 failed, 28 passed, 25 deselected` is the **right** answer — those ten
+   are the job board you have not built yet. Any other number, or an error,
+   means the packages did not install: fix it here, not after ten minutes of
+   Cline setup.
 5. **Copy in your key.**
    ```
    copy .env.example .env
