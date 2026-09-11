@@ -144,21 +144,27 @@ every test until you build it.
    ```
    saoudrizwan.claude-dev
    ```
-   Click **Install**. A robot icon appears in that same left-hand strip. Any
-   other "Cline" is somebody else's copy, and you are about to paste a shared
-   class key into whatever you installed.
+   Click **Install**, then **Trust Publisher & Install** on the dialog that
+   follows — check it names `saoudrizwan.claude-dev` and a verified
+   `cline.bot`. A robot icon appears in that same left-hand strip. Any other
+   "Cline" is somebody else's copy, and you are about to paste a shared class
+   key into whatever you installed.
 8. **Point Cline at the model.** This is a separate step from `.env`, and
    skipping it is the most common way to arrive unable to work: `.env` is
    read by the *app*; Cline is a different program, with its own settings,
    that never looks at `.env`.
    - Click the **Cline icon** — the robot in the strip of icons down the far
      left.
-   - Cline opens on **"How will you use Cline?"** with four options.
-     **Scroll the list** — the one you want is last, and below the fold on a
-     lab monitor. The first three are **Absolutely Free** (already ticked for
-     you), **ClinePass** and **Frontier Model**; **take none of them.** Choose
-     the fourth, **Bring my own API key** — the others sign you into Cline's
-     own service or a paid plan and ignore the key you were just given.
+   - Cline opens on **"How will you use Cline?"** with four options:
+     **Absolutely Free** (already ticked for you), **ClinePass**, **Frontier
+     Model**, and **Bring my own API key**. **Take only the last one** — the
+     other three sign you into Cline's own service or a paid plan and ignore
+     the key you were just given. It is fourth and last; scroll if you cannot
+     see it.
+   - **The next screen starts on the wrong provider.** It opens on
+     **OpenRouter**, offering to sell you an OpenRouter key, with a Claude
+     model prefilled. Change the provider before anything else. Clicking the
+     **API Provider** box turns it into a search box — type `compatible`.
    - API Provider **OpenAI Compatible** — **not "Z AI."** Cline's built-in Z
      AI provider has a fixed model dropdown that stops at `glm-5.2`; it does
      not offer `glm-5.3-flash`, even though the API genuinely serves it.
@@ -306,7 +312,10 @@ because "does this test really decide this claim?" has been gotten wrong
 twice already: once by a real agent in a live run of this lab, and once in
 the reference spec used to write this lab's answer key. Read the sentence
 each `pytest` row is attached to and search it for **Browse, Post, page,
-card, count, shows, sees,** or **screen**. No test in this repository opens a
+card,** or **screen**. Those five name the interface. (Words like *shows*,
+*sees* and *counts* were on this list and came off it: they are ordinary
+English, they fired on three sound rows out of ten in a clean run, and the
+noise was training people to ignore the check.) No test in this repository opens a
 page, so no `pytest` citation can ever decide a claim about one.
 
 A hit is a flag, not a verdict. Ask one question about it: **what is this row
@@ -355,6 +364,15 @@ page. Only 6b can catch that page. This is the whole reason the check above
 is Ctrl-F and not a principle to remember: the wrong version of row 6 reads
 exactly as thorough as the right one, right up until someone actually opens
 the page.
+
+**The agent will offer to keep going. Do not let it.** After you reply
+`approved` it often carries straight on into the next gate by itself, working
+from the documents rather than from the next prompt. That skips the prompt,
+and the prompt is where the specifics live — in a measured run the agent
+sailed past Gate 3 and Gate 4 unprompted and built a Post page with no job
+count in its confirmation, because no prompt had ever asked for one. If it
+starts moving on its own, stop it, open a **new** task, and paste the next
+gate's prompt.
 
 Reply `approved` in the same task. Then start a **new** task for Gate 3 — a
 long conversation makes an agent worse, not better.

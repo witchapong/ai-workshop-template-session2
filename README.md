@@ -87,7 +87,10 @@ what that means in practice, and message the class channel if any step fails
    saoudrizwan.claude-dev
    ```
 
-   Click **Install**. A robot icon appears in that same left-hand strip.
+   Click **Install**. VS Code then asks **"Do you trust the publisher
+   'Cline'?"** — check it says `saoudrizwan.claude-dev` and a verified
+   `cline.bot`, then **Trust Publisher & Install**. A robot icon appears in
+   that same left-hand strip.
 
    > Any other "Cline" is somebody else's copy. You are about to paste a shared
    > class key into whatever you install, so this is worth ten extra seconds.
@@ -99,12 +102,17 @@ what that means in practice, and message the class channel if any step fails
 
    - Click the **Cline icon** — the robot you just installed, in the strip of
      icons down the far left. The icons are unlabelled; hover to check.
-   - Cline opens on **"How will you use Cline?"** with four options.
-     **Scroll the list** — the one you want is last and is below the fold on a
-     lab monitor. The first three are **Absolutely Free** (already ticked for
-     you), **ClinePass**, and **Frontier Model**; **take none of them.** Choose
-     the fourth, **Bring my own API key** — the others sign you into Cline's
-     own service or a paid plan, and never touch the key you were just given.
+   - Cline opens on **"How will you use Cline?"** with four options:
+     **Absolutely Free** (already ticked for you), **ClinePass**, **Frontier
+     Model**, and **Bring my own API key**. **Take only the last one** — the
+     other three sign you into Cline's own service or a paid plan and never
+     touch the key you were just given. It is the fourth and last in the list;
+     scroll if you cannot see it.
+   - **The next screen starts on the wrong provider.** It opens on
+     **OpenRouter**, with a green "Get OpenRouter API Key" button and a
+     Claude model already filled in. Ignore both and change the provider
+     first. Clicking the **API Provider** box turns it into a search box —
+     type `compatible` to find the entry rather than hunting the list.
    - API Provider **OpenAI Compatible** — **not "Z AI."** Cline's built-in Z
      AI provider has a fixed model dropdown that stops at `glm-5.2`; it does
      not offer `glm-5.3-flash`, even though the API genuinely serves it.
